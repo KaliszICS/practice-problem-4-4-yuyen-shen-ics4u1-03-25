@@ -19,15 +19,15 @@ public final class CampbellClass{
         return String.valueOf(boo);
     }
 
-    public int convertMetersToCenti(int meter) {
+    public static int convertMetersToCenti(int meter) {
         return meter*100;
     }
 
-    public double convertMetersToCenti(double meter0) {
+    public static double convertMetersToCenti(double meter0) {
         return meter0*100;
     }
 
-    public String removeNonAlpha(String word0, boolean bool){
+    public static String removeNonAlpha(String word0, boolean bool){
         String cleaned = word0.replaceAll("[^a-zA-Z]", "");
         if (bool) {
             return cleaned.toUpperCase();

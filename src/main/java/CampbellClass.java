@@ -27,14 +27,17 @@ public final class CampbellClass{
         return meter0*100;
     }
 
+    public static String removeNonAlpha(String word){
+        String cleaned = word.replaceAll("[^a-zA-Z]", "");
+        return cleaned;
+    }
+
     public static String removeNonAlpha(String word0, boolean bool){
         String cleaned = word0.replaceAll("[^a-zA-Z]", "");
         if (bool) {
             return cleaned.toUpperCase();
-        }
-        if (!bool){
+        } else {
             return cleaned.toLowerCase();
         }
-        return "";
     }
 }
